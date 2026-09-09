@@ -1,0 +1,10 @@
+{
+  "id": "tray-safe",
+  "name": "Tray Safe",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Run from the system tray with a recoverable window: minimises instead of hiding, so a lost compositing surface can never leave you with a black or unreachable window.",
+  "author": "Antist",
+  "authorUrl": "https://github.com/Antisubmissivist/obsidian-tray-safe",
+  "isDesktopOnly": true
+}
