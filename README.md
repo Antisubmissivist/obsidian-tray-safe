@@ -37,6 +37,21 @@ Same visible result — the window disappears, only the tray icon remains — bu
 | Maximised state | often lost | tracked per window and restored |
 | Extra safety | — | optional repaint nudge on restore |
 
+### This isn't a hypothetical difference
+
+Every other tray plugin in the community store hides the same way. Counted by grepping the `main.js` of each plugin's latest release (2026-09-09):
+
+| Plugin | `.hide(` | `.minimize(` |
+|---|---|---|
+| [tray](https://github.com/dragonwocky/obsidian-tray) | 4 | 1 · only the `runInBackground: false` fallback |
+| [background-tray](https://github.com/synaphi/background-tray) | 5 | 0 |
+| [omarchy-tray](https://github.com/lopezjuanma96/omarchy-tray) | 5 | 0 |
+| [traystone](https://github.com/tinswangtao-web/traystone) | 4 | 1 · same fallback |
+| [mini-tray](https://github.com/wangdamon6-hub/obsidian-mini-tray) | 2 | 0 |
+| **Tray Safe** | **0** | primary strategy |
+
+Not a criticism of any of them — `hide()` is the obvious call to reach for, and it works fine on most machines. But if it's the one that breaks on yours, every one of those plugins breaks the same way.
+
 ## Features
 
 - **Tray icon** with show/hide, quick note, and quit
